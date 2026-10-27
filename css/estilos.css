@@ -1,0 +1,92 @@
+/* 1. Ajustes generales */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #243247;
+    background-color: #fff8e7; /* Cambio 1: Fondo modificado a #fff8e7 */
+    line-height: 1.6;
+}
+
+/* 2. Encabezado */
+.encabezado {
+    background-color: #512da8; /* Cambio 2: Color del encabezado modificado a #512da8 */
+    color: white;
+    text-align: center;
+    padding: 36px 20px;
+}
+
+.encabezado h1 {
+    margin: 0 0 8px;
+    font-size: 2rem;
+}
+
+.encabezado p {
+    margin: 0;
+}
+
+/* 3. Contenido principal */
+.contenedor {
+    width: min(900px, 92%);
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 1fr; /* Cambio 5: Diseño de una sola columna en todo momento */
+    gap: 20px;
+}
+
+/* 4. Tarjetas */
+.tarjeta {
+    background-color: white;
+    padding: 32px; /* Cambio 3: Padding aumentado a 32px */
+    border: 1px solid #d9e1eb;
+    border-radius: 20px; /* Cambio 4: Border-radius cambiado a 20px */
+    box-shadow: 0 4px 12px rgba(20, 40, 70, 0.08);
+}
+
+.tarjeta h2 {
+    color: #176b73;
+    margin-top: 0;
+}
+
+/* Cambio 6: Regla para que los párrafos dentro de tarjeta tengan un tamaño de 1.05rem */
+.tarjeta p {
+    font-size: 1.05rem;
+}
+
+.enlace {
+    display: inline-block;
+    margin-top: 8px;
+    color: #1456a0;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Cambio 7: El enlace cambia de color al pasar el puntero */
+.enlace:hover {
+    color: #512da8;
+    text-decoration: underline;
+}
+
+/* Pregunta 10: Mejora de accesibilidad (indicador visual de enfoque para teclado) */
+.enlace:focus {
+    outline: 2px solid #512da8;
+    outline-offset: 2px;
+}
+
+/* 5. Pie de página */
+.pie {
+    text-align: center;
+    padding: 18px;
+    background-color: #dfe8f2;
+    color: #33465c;
+}
+
+/* 6. Diseño para pantallas pequeñas */
+@media (max-width: 600px) {
+    .encabezado h1 {
+        font-size: 1.6rem;
+    }
+}
